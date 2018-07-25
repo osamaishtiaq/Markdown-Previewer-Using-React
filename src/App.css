@@ -1,0 +1,106 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #222;
+  width: 100%;
+  color: white;
+  flex:1;
+}
+
+.App-title {
+  font-size: 1rem;
+}
+
+.App-body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  min-height: 80vh;
+  background-color: rgba(0, 161, 140, 0.938);
+}
+
+.editor-box {
+  width: 80%;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 10px 10px 0 rgba(50,50,50,0.2), 
+              0 0 25px rgba(60,60,60,0.3);
+}
+
+.tool-bar {
+  font-size: 1.2rem;
+  display: flex;
+  width: 100%;
+  height: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  border: 1px solid rgba(100,100,100,0.3);
+  border-bottom: none;
+}
+
+#editor {
+  height: 20rem;
+  background-color: whitesmoke;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 1rem;
+  border-top: none;
+}
+
+.preview-box {
+  width: 80%;
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 10px 10px 0 rgba(50,50,50,0.2), 
+              0 0 25px rgba(60,60,60,0.3);
+}
+
+#preview {
+  height: 20rem;
+  background-color: whitesmoke;
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0.5rem;
+  border-top: none;
+  font-size: 1.2rem;
+  overflow-y: scroll;
+}
+
+.maximized {
+  position: absolute;
+  width: 95%;
+  margin: 2rem auto;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #050505;
+  width: 100%;
+}
+
+.footer-text {
+  font-size: 1rem;
+  color: #eee;
+}
